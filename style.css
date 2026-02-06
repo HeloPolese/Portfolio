@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------- BODY ---------- */
+body {
+    min-height: 100vh;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+/* ---------- HEADER ---------- */
+.header {
+    background-color: #000000;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    margin-bottom: 7rem;
+}
+
+/* ---------- LOGO ---------- */
+.logo {
+    color: #F5F5F5;
+    font-size: clamp(1.4rem, 5vw, 2rem);
+    font-weight: 700;
+    cursor: pointer;
+    margin-left: 10rem;
+}
+
+.logo span {
+    color: #FF4D8D;
+}
+
+/* ---------- LINKS ---------- */
+.boxLinks {
+    display: flex;
+    margin-right: 10rem;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: #F5F5F5;
+    font-size: 1rem;
+    transition: color 0.3s;
+    margin-right: 5rem;
+}
+
+a:hover {
+    color: #FF4D8D;
+}
+
+/* ---------- MAIN ---------- */
+main {
+    flex-grow: 1;
+    padding: 1rem;
+}
+.imgCenter{
+    width: 50%;
+    height: auto;
+    max-width: 200px;
+    aspect-ratio: 1 / 1;   /* força formato quadrado */
+    object-fit: cover;     /* corta sem distorcer */
+    border-radius: 50%;   
+    margin: 0 ;
+    align-self: flex-start;
+    
+}
+.centerDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+}
+.centerTittle{
+    font-size: 3rem;
+    color: #FF4D8D;
+    margin-left: 3rem;
+    margin-right: 10rem;
+}
+.divParagrafo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divSobreMim{
+    display: flex;
+    margin-top: 12rem;
+    margin-left: 12rem;
+    margin-bottom: 5rem;
+}
+.titleSobremim{
+    font-size: 2rem;
+}
+
+.divtexto{
+    display: flex;
+    margin-left:12rem;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12rem;
+    margin-top: 2rem;
+}
+.helo-js,.helo-html,.helo-css,.helo-python,.helo-gitHub,.helo-trello,.helo-figma{
+    width: 4%;
+    margin-left: 1rem;
+}
+.helo-php,.helo-mysql{
+    width: 5%;
+     margin-left: 1rem;
+}
+/* ---------- FOOTER ---------- */
+footer {
+    background-color: #000000;
+    height: 3rem;
+}
+
+.boxSkills{
+     margin-left:11rem;
+}
+.boxContato{
+    display: flex;
+    margin-left: 12rem;
+    margin-bottom: 12rem;
+    align-items: center;
+}
+#ingles{
+    margin-top: 7rem;
+}
+.imgGit{
+    width: 11%;
+
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 768px) {
+    .header {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .boxLinks {
+        width: 100%;
+        justify-content: center;
+        margin-top: 0.8rem;
+      
+    }
+
+    ul {
+        gap: 1rem;
+    }
+}
