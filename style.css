@@ -23,6 +23,7 @@ body {
     justify-content: space-between;
     padding: 0 1rem;
     margin-bottom: 5rem;
+    flex-wrap: wrap;
 }
 
 /* ---------- LOGO ---------- */
@@ -32,7 +33,7 @@ body {
     font-size: clamp(1.4rem, 5vw, 2rem);
     font-weight: 700;
     cursor: pointer;
-    margin-left: 10rem;
+    margin-left: 9rem;
     margin-right: 3rem;
 }
 
@@ -45,13 +46,14 @@ body {
 .boxLinks {
     display: flex;
     margin-right: 10rem;
-  
+flex-wrap: wrap;
+gap: 1rem;
 }
 
 ul {
     display: flex;
     list-style: none;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 .link {
@@ -61,11 +63,11 @@ ul {
     transition: color 0.3s;
     margin-right: 5rem;
     font-weight: 600;
-    
 }
 
 .link:hover {
     color: #FF4D8D;
+    text-decoration: underline;
 }
 
 /* ---------- MAIN ---------- */
